@@ -1,0 +1,123 @@
+#social-media-block {
+    width: 77%;
+    margin: auto;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .social-stat{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: hsl(228, 28%, 20%);
+        height: 215px;
+        width: 23%;
+        max-width: 450px;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 150ms ease-in-out;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: red;
+            top: 0px;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+        &:hover {
+            background-color: #333a56;
+        }
+        p {
+            margin: 0;
+            color: white;
+        }
+        .social-media-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: hsl(228, 34%, 66%);
+            margin-top: 32px;
+            font-size: 12px;
+            font-weight: 700;
+            transition: 150ms ease-in-out;
+            img{
+                margin-right: 8px;
+                transition: 250ms ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+            }
+        }
+        .followers-num {
+            font-size: 56px;
+            font-weight: 700;
+            color: white;
+            margin-top: 18px;
+            letter-spacing: -2px;
+            transition: 150ms ease-in-out;
+        }
+        .followers {
+            text-transform: uppercase;
+            color: hsl(228, 34%, 66%);
+            font-size: 12px;
+            letter-spacing: 5px;
+            transition: 150ms ease-in-out;
+        }
+        .per-day {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #1db489;
+            margin-top: 25px;
+            font-weight: 700;
+            transition: 150ms ease-in-out;
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.red-text {
+    color: hsl(356, 69%, 56%) !important;
+}
+
+.facebook-top-border {
+    &::before {
+        background-color: hsl(208, 92%, 53%) !important;
+    }
+}
+.twitter-top-border {
+    &::before {
+        background-color: hsl(203, 89%, 53%) !important;
+    }
+}
+.instagram-top-border {
+    &::before {
+        background: linear-gradient(45deg, hsl(37, 97%, 70%) , hsl(329, 70%, 58%)) !important;
+    }
+}
+.youtube-top-border {
+    &::before {
+        background-color: hsl(348, 97%, 39%) !important;
+    }
+}
+
+.social-stat-light-theme {
+    background-color: hsl(227, 47%, 96%) !important;
+    &:hover {
+        background-color: #e1e3f0 !important;
+    }
+}
+.social-media-name-light-theme {
+    color: hsl(228, 12%, 44%) !important;
+}
+.followers-num-light-theme {
+    color: hsl(230, 17%, 14%) !important;
+}

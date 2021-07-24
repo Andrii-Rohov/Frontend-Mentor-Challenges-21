@@ -1,0 +1,100 @@
+#today-stat-block {
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#today-stat-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#today-stat-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    
+}
+.today-stat {
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+    max-width: 450px;
+    height: 125px;
+    border-radius: 5px;
+    background-color: hsl(228, 28%, 20%);
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+    &:hover {
+        background-color: #333a56;
+        
+    }
+    .today-stat-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+        .today-stat-left-text {
+            margin: 26px 0 0 24px;
+            font-size: 14px;
+            font-weight: 700;
+            color: hsl(228, 34%, 66%);
+        }
+        .today-stat-left-number {
+            color: hsl(0, 0%, 100%);
+            margin: 0 0 24px 24px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+    .today-stat-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 50%;
+        img {
+            margin-right: 32px;
+            margin-top: 25px;
+            transition: 150ms ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .today-percentages {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-right: 32px;
+            color: hsl(163, 72%, 41%);
+            img {
+                margin: 0;
+                margin-right: 4px;
+                transition: 150ms ease-in-out;
+            
+            }
+        }
+    }
+}
+.today-stat-light-theme {
+    background-color: hsl(227, 47%, 96%) !important;
+    &:hover {
+        background-color: #e1e3f0 !important;
+    }
+}
+
+.today-stat-left-text-light-theme {
+    color: hsl(228, 12%, 44%) !important;
+}
+.today-stat-left-number-light-theme {
+    color: hsl(230, 17%, 14%) !important;
+}

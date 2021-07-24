@@ -1,0 +1,14 @@
+#heading-overview {
+    width: 77%;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+    margin-top: 48px;
+    transition: 250ms ease-in-out;
+    h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+}
+.heading-overview-light-theme {
+    color: hsl(228, 12%, 44%) !important;
+}

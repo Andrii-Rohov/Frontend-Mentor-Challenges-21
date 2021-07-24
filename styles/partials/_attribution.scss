@@ -1,0 +1,41 @@
+.attribution {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    a {
+        position: relative;
+        color: hsl(228, 34%, 66%);
+        text-decoration: none;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            width: 0%;
+            height: 3px;
+            background-color: hsl(228, 34%, 66%);
+            transition: 200ms ease-in-out;
+          
+        }
+        &:hover {
+            &::after {
+                left: 0;
+            width: 100%;
+            }
+            
+        }
+    }
+}
+
+.attribution-light-theme {
+    color: hsl(230, 17%, 14%) !important;
+    a {
+        color: hsl(228, 12%, 44%) !important;
+        &::after {
+            background-color: hsl(228, 12%, 44%) !important;
+        }
+    }
+}  
